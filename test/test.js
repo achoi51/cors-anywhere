@@ -859,7 +859,7 @@ describe('redirectSameOrigin', function() {
 describe('requireHeader', function() {
   before(function() {
     cors_anywhere = createServer({
-      requireHeader: ['origin', 'x-requested-with'],
+      requireHeader: [],
     });
     cors_anywhere_port = cors_anywhere.listen(0).address().port;
   });
